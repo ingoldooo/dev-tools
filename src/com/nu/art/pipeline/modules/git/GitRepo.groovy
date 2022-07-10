@@ -45,7 +45,7 @@ class GitRepo {
 														 trackingSubmodules : false],
 														[$class: 'CloneOption', noTags: false, reference: '', shallow: config.shallowClone],
 														[$class: 'CheckoutOption'],
-														[$class: 'UserExclusion', excludedUsers: "Nu-Art-Jenkins\nNu-Art Jenkins\n"],
+														[$class: 'UserExclusion', excludedUsers: "IR-Jenkins"],
 														[$class: 'RelativeTargetDirectory', relativeTargetDir: "__${outputFolder}"]],
 				browser          : [$class: config.service, repoUrl: url],
 				userRemoteConfigs: [[url: url + '.git']]
